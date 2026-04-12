@@ -1,0 +1,909 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 8280px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(58, 5, 5, 0.7);
+    z-index: 10;
+}
+
+.header-search{
+    width: 220px;
+    height: 27px;
+    position: absolute;
+    display: inline;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.header-search i{
+    line-height: 27px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.header-enter{
+    position: relative;
+    border: 0;
+    width: 220px;
+    height: 27px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+}
+
+.header-icon{
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: white;
+}
+
+.header-list{
+    float: right;
+}
+
+.header-list li{
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.header-list li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.header-list li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(255, 136, 0);
+}
+
+.header-list li a:hover::after{
+    width: 80%;
+    height: 2px;
+    transition: 1s;
+}
+
+.li-dropdown{
+    position: relative;
+}
+
+.blog-dropdown li a{
+    color: black;
+}
+
+.blog-dropdown{
+    position: absolute;
+    visibility: hidden;
+    width: 135px;
+    height: 140px;
+    border-radius: 15px;
+    background-color: beige;
+}
+
+.li-dropdown:hover .blog-dropdown{
+    visibility: visible;
+}
+
+.home-img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/do.jpg);
+    background-size: cover;
+}
+
+.home-layout{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(27, 5, 5, 0.5);
+}
+
+.home-intro{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    text-align: center; 
+    color: white; 
+}
+
+.home-intro h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.home-cap{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.home-btn{
+    margin-top: 10px;
+    font-size: 15px;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.home-btn2{
+    background-color: rgb(255, 136, 0);
+}
+
+.home-btn1:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.home-btn2:hover{
+    background-color: rgb(255, 136, 0, 0.3);
+}
+
+.welcome,.featured,.offer,.pricing,.team,.rate,.news{
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-header,.featured-header,.offer-header{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.welcome-head{
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 70px 0 10px 0;
+}
+
+.welcome-line,.featured-line,.offer-line,.pricing-line,.team-line,.news-line{
+    margin: auto;
+    width: 85px;
+    height: 3px;
+    background-color: rgb(255, 136, 0);
+}
+
+.welcome-container,.offer-container{
+    width: 75%;
+    margin: auto;
+}
+
+.welcome-parent,.featured-parent{
+    overflow: auto;
+}
+
+.welcome-div{
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 225px;
+    border: solid rgb(255, 136, 0) 3px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 100px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.welcome-item,.offer-item,.pricing-item,.news-item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.welcome-item:hover .welcome-title{
+    color: rgb(255, 255, 255);
+}
+
+.welcome-item:hover .welcome-text{
+    color: black;
+}
+
+.welcome-div::after,.offer-div::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(235, 183, 13, 0.3);
+    border-radius: 10px;
+}
+
+.welcome-div:hover::after,.offer-div:hover::after,.pricing-div:hover::after,.team-div:hover::after,.news-div:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.welcome-div2{
+    margin: 100px 9%;
+}
+
+.welcome-icon{
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.welcome-title{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.welcome-text1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.welcome-text{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.welcome-link{
+    color: rgb(255, 136, 0);
+    text-decoration: none;
+}
+
+.featured{
+    background-color: beige;
+}
+
+.featured-head{
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 60px 0 10px 0;
+}
+
+.featured-container{
+    width: 65%;
+    margin: auto;
+}
+
+.featured-div{
+    position: relative;
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin-top: 70px;
+}
+
+.featured-div1{
+    background-image: url(../images/sofa.jpg);
+    background-size: cover;
+}
+
+.featured-div2{
+    background-image: url(../images/pp.jpg);
+    background-size: cover;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.featured-div3{
+    background-image: url(../images/download\ \(4\).jpg);
+    background-size: cover;
+}
+
+.featured-div4{
+    background-image: url(../images/bed.jpg);
+    background-size: cover;
+    margin-top: 40px;
+}
+
+.featured-div5{
+    background-image: url(../images/download\ \(7\).jpg);
+    background-size: cover;
+    margin: 40px 40px 0 40px;
+}
+
+.featured-div6{
+    background-image: url(../images/coffee.jpg);
+    background-size: cover;
+    margin-top: 40px;
+}
+
+.featured-overlay{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(41, 3, 3, 0.6);
+}
+
+.featured-overlay:hover{
+    opacity: 1;
+}
+
+.featured-title{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+}
+
+.featured-text{
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 25px;
+}
+
+.featured-icon{
+    float: left;
+    width: 40px;
+    height: 30px;
+    background-color: beige;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+
+.featured-icon1{
+    margin-left: 120px;
+    margin-right: 4px;
+}
+
+.featured-icons{
+    font-size: 20px;
+    color: rgb(141, 10, 10);
+    margin-top: 4px;
+}
+
+.offer-header{
+    margin-bottom: 80px;
+}
+
+.offer-head{
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 90px 0 10px 0;
+}
+
+.offer-div{
+    position: relative;
+    width: 26%;
+    height: 230px;
+    float: left;
+    border: solid rgb(255, 136, 0) 3px;
+    border-radius: 10px;
+}
+
+.offer-div2{
+    margin: 0 10%;
+}
+
+.offer-div4,.offer-div6{
+    margin-top: 50px;
+}
+
+.offer-div5{
+    margin: 50px 10% 0 10%;
+}
+
+.offer-icon{
+    float: left;
+    font-size: 30px;
+    padding: 20px 10px 50px 10px;
+    color: rgb(255, 136, 0);
+}
+
+.offer-title{
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 20px 0 20px 0;
+}
+
+.offer-text{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.offer-div:hover .offer-title{
+    color: rgb(255, 136, 0);
+}
+
+.offer-div:hover .offer-text,.news-div:hover .news-text2{
+    color: black;
+}
+
+.why{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(90, 17, 17);
+}
+
+.why-item{
+    float: left;
+    width: 800px;
+    height: 600px;
+    padding: 130px 0 0 170px;
+}
+
+.why-title{
+    font-size: 40px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.why-line{
+    width: 80px;
+    height: 3px;
+    margin-top: 10px;
+    background-color: rgb(255, 136, 0);
+}
+
+.why-cap{
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.why-icon{
+    float: left;
+    color: rgb(255, 136, 0);
+    margin-top: 2px
+}
+
+.why-text{
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 45px;
+}
+
+.why-dots{
+    float: right;
+    width: 800px;
+    height: 700px;
+}
+
+.why-img{
+    width: 400px;
+    height: 480px;
+    background-image: url(../images/Sleek\ Scandinavian\ Living\ Room\ Decor_\ 15\ Ideas\ to\ Elevate\ Your\ Space!.jpg);
+    background-size: cover;
+    margin: 100px 0 0 180px;
+}
+
+.why-dot{
+    float: right;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 30px;
+}
+
+.why-dot1{
+    margin-right: 390px;
+}
+
+.why-dot2{
+    margin: 30px 10px;
+}
+
+.why-dot3,.why-dot4:hover{
+    background-color: rgb(255, 136, 0);
+}
+
+.rate{
+    position: relative;
+    background-image: url(../images/kam-idris-_HqHX3LBN18-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.rate-section1{
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    background-color: rgb(90, 17, 17);
+}
+
+.rate-section2{
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 360px;
+}
+
+.rate-item{
+    color: white;
+    text-align: center;
+    float: left;
+    margin: 170px 0 0 200px;
+
+}
+
+.rate-icon{
+    font-size: 40px;
+    color: rgb(255, 136, 0);
+    padding-bottom: 10px;
+}
+
+.rate-text{
+    font-size: 15px;
+}
+
+.rate-num{
+    font-size: 20px;
+}
+
+.rate-num,.rate-text{
+    text-transform: capitalize;
+}
+
+.rate-item1{
+    margin-left: 400px;
+}
+
+.pricing-header,.news-header{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.pricing-head{
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 110px 0 10px 0;
+}
+
+.pricing-container,.team-container,.news-container{
+    width: 80%;
+    margin: auto;
+}
+
+.pricing-div{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 420px;
+    border: solid rgb(255, 136, 0) 3px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0 0 80px;
+}
+
+.pricing-type{
+    text-transform: uppercase;
+    padding: 40px 0 20px 0;
+}
+
+.pricing-circle{
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    border: solid rgb(255, 136, 0) 3px;
+    border-radius: 55px; 
+}
+
+.pricing-price{
+    font-size: 35px; 
+    padding-top: 15px;
+}
+
+.pricing-details{
+    margin-top: 25px;
+    line-height: 40px;
+    z-index: 1;
+}
+
+.pricing-btn{
+    width: 190px;
+    height: 35px;
+    border: solid rgb(255, 136, 0) 3px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    background-color: rgba(235, 183, 13, 0.3);
+}
+
+.pricing-div:hover .pricing-type{
+    color: rgb(255, 80, 0);
+}
+
+.pricing-div:hover .pricing-circle{
+    border: solid rgb(255, 80, 0) 3px;
+}
+
+.pricing-div:hover .pricing-btn{
+    background-color: white;
+}
+
+.pricing-div::after,.news-div::after{
+    margin-left: -167px;
+}
+
+.marketing{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/michael-oxendine-GHCVUtBECuY-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.marketing-layout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.marketing-section{
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin-top: 150px;
+}
+
+.marketing-section1{
+    margin-left: 400px;
+}
+
+.marketing-picture{
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    background-image: url(../images/download\ \(4\).jfif);
+    background-size: cover;
+    margin-right: 20px;
+    float: left;
+}
+
+.marketing-picture2{
+    background-image: url(../images/fhh.jfif);
+}
+
+.marketing-name{
+    line-height: 30px;
+    margin: 35px 0;
+    text-transform: capitalize;
+}
+
+.marketing-text1{
+    font-size: 30px;
+    color: white;
+}
+
+.marketing-text2{
+    font-size: 20px;
+    color: rgb(255, 136, 0);
+}
+
+.marketing-cap{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.team-header{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.team-head{
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 110px 0 10px 0;
+}
+
+.team-div{
+    position: relative;
+    width: 28%;
+    height: 440px;
+    background-color: beige;
+    border-radius: 10px;
+    float: left;
+    margin: 60px 0 0 55px;
+}
+
+.team-picture{
+    position: relative;
+    width: 80%;
+    height: 300px;
+    background-image: url(../images/2021\ Holiday\ Gift\ Guide_\ Brothers\ _\ Cup\ of\ Jo.jfif);
+    background-size: cover;
+    margin: 20px 0 0 38px;
+}
+
+.team-picture2{
+    background-image: url(../images/hll.jfif);
+}
+
+.team-picture3{
+    background-image: url(../images/Samsung\ Photography\ Masterclass\ –\ Fotografia\ Samsung.jfif);
+}
+
+.team-icon{
+    width: 40px;
+    height: 170px;
+    color: white;
+    background-color: rgb(255, 136, 0);
+    text-align: center;
+    right: 0;
+    position: absolute;
+    font-size: 20px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.team-icon1{
+    margin: 18px 5px;
+}
+
+.team-details{
+    position: absolute;
+    text-align: center;
+    margin: 10px 0 0 115px;
+    line-height: 45px;
+    z-index: 1;
+}
+
+.team-text1{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.team-text2{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.team-div:hover .team-text1,.news-div:hover .news-text1{
+    color: white;
+}
+
+.team-div:hover .team-text2{
+    color: rgb(255, 136, 0);
+}
+
+.team-div:hover .team-icon{
+    visibility: visible;
+}
+
+.team-div::after,.pricing-div::after,.news-div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(235, 183, 13, 0.3);
+    border-radius: 10px;
+}
+
+.news-head{
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: 200px 0 10px 0;
+}
+
+.news-div{
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 550px;
+    border: solid rgb(255, 136, 0) 3px;
+    border-radius: 10px;
+    margin: -90px 0 0 60px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.news-picture{
+    width: 75%;
+    height: 270px;
+    background-image: url(../images/Elevate\ Your\ Workday\ Wardrobe_\ The\ Perfect\ Balance\ of\ Style\ and\ Comfort.jfif);
+    background-size: cover;
+    border-radius: 10px;
+    margin: 25px 0 30px 45px;
+}
+
+.news-picture2{
+    background-image: url(../images/lopo.jpg);
+}
+
+.news-picture3{
+    background-image: url(../images/A\ Conversation\ with\ Adrian\ Mesko.jpg);
+}
+
+.news-icon1,.news-details a{
+    color: rgb(255, 136, 0);
+}
+.news-react{
+    margin: 0 15px 0 4px;
+}
+
+.news-details{
+    margin-top: 20px;
+}
+
+.news-text1{
+    font-size: 20px;
+}
+
+.news-text2{
+    margin: 23px 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.news-details a{
+    text-decoration: none;
+}
+
+.news-div::after{
+    margin-left: -180px;
+}
+
+.footer{
+    width: 100%;
+    height: 420px;
+    background-color: rgb(70, 8, 8);
+}
+
+.footer-item{
+    width: 400px;
+    height: 420px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.footer-picture{
+    width: 310px;
+    height: 240px;
+    background-image: url(../images/jkk.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    margin: 20px 0 0 43px;
+}
+
+.footer-icon{
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgba(235, 183, 13, 0.3);
+    font-size: 30px;
+    padding-top: 15px;
+    margin: 40px 0 20px 5px;
+}
+
+.footer-text{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-icon:hover{
+    background-color: rgb(255, 136, 0);
+}
