@@ -1,85 +1,86 @@
 body{
-    height: 1000px;
     background-image: url(../images/21\ Vintage\ Books\ to\ Make\ You\ Nostalgic\ ___.jfif);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .div1{
-    width: 65%;
-    height: 55px;
+    width: 70%;
+    max-width: 1100px;
+    height: auto;
     border-radius: 10px;
     background-color: beige;
-    position: fixed;
-    top: 15px;
-    margin-left: 225px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .div1 img{
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: auto;
     border-radius: 10px;
-    float: left;
 }
 
 .title1{
     color: rgba(0, 0, 0, 0.692);
-    float: left;
-    margin-left: 5px;
-    margin-top: -1px;
-    margin-top: 13px;
 }
 
-.div1 li{
-    display: inline-block;
-    margin-right: 25px;
-    margin-top: 3px;
-    float: right;
+.div1 ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
 }
 
 .div1 li a{
     color: rgba(0, 0, 0, 0.692);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-.div2{
-    width: 265px;
-    height: 400px;
+.parent{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+.div2, .div3, .div4{
+    width: 100%;
+    max-width: 265px;
+    height: auto;
     background-color: beige;
     border-radius: 15px;
     text-align: center;
-    margin-top: 120px;
-    margin-left: 230px;
-    float: left;
 } 
 
-.div3{
-    width: 265px;
-    height: 400px;
-    background-color: beige;
-    border-radius: 15px;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 40px;
-    float: left;
+@media (max-width: 768px) {
+    .div1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .div1 ul {
+        display: none;
+    }
 }
 
-.div4{
-    width: 265px;
-    height: 400px;
-    background-color: beige;
-    border-radius: 15px;
-    text-align: center;
-    margin-top: 80px;
-    margin-left: 40px;
-    float: left;
-}
-
-.mini1{
+.mini1, .mini2, .mini3{
     width: 90px;
     height: 90px;
     border-radius: 45px;
@@ -89,24 +90,15 @@ body{
 }
 
 .mini2{
-    width: 90px;
-    height: 90px;
-    border-radius: 45px;
-    margin: auto;
     background-image: url(../images/Image\ May\ Contain\ Table\ And\ Indoor.jfif);
-    background-size: cover;
 }
 
 .mini3{
-    width: 90px;
-    height: 90px;
-    border-radius: 45px;
-    margin: auto;
     background-image: url(../images/New\ Brainrot_.jfif);
-    background-size: cover;
 }
 
 .p1{
+    padding: 15px;
     word-spacing: 3px;
     line-height: 25px;
 }
@@ -120,9 +112,9 @@ body{
     height: 40px;
     color: white;
     background-color: rgb(99, 158, 76);
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 10px 0 20px 0;
     border: 0;
 }
 
