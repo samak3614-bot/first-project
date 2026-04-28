@@ -1,7 +1,7 @@
 body{
     background-image: url(../images/21\ Vintage\ Books\ to\ Make\ You\ Nostalgic\ ___.jfif);
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -36,6 +36,12 @@ body{
     color: rgba(0, 0, 0, 0.692);
 }
 
+.menu{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 .div1 ul{
     display: flex;
     flex-wrap: wrap;
@@ -58,6 +64,10 @@ body{
     margin-top: 50px;
 }
 
+.parent li a{
+    color: black;
+    text-decoration: none;
+}
 
 .div2, .div3, .div4{
     width: 100%;
@@ -77,6 +87,34 @@ body{
     }
     .div1 ul {
         display: none;
+        width: 100%;
+    }
+    .div1 ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .div1 ul li {
+        text-align: center;
+        padding: 10px;
+    }
+    .menu {
+        display: block;
+    }
+    .parent2 {
+        height: auto;
+        padding: 20px 0;
+    }
+    .about,
+    .contact {
+        width: 90%;
+    }
+    .about h2,
+    .contact h2 {
+        font-size: 24px;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -107,7 +145,7 @@ body{
     text-decoration: overline;
 }
 
-.btn{
+.btn1, .btn2, .btn3{
     width: 150px;
     height: 40px;
     color: white;
@@ -118,14 +156,76 @@ body{
     border: 0;
 }
 
-.div1 li a:hover{
+.div1 li a:hover,
+.parent li a:hover{
     color: rgb(240, 39, 39);
-}
-
-.btn:hover{
-    background-color: rgb(53, 13, 13);
 }
 
 p::selection{
     background-color: rgb(233, 94, 89);
+}
+
+li{
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.parent2{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    background: beige;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 16px;
+    color: rgb(63, 63, 63);
+}
+
+.contact {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-info div {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
 }

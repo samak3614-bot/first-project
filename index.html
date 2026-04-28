@@ -2,30 +2,39 @@
     <head>
         <title>IA.PRO</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
     </head>
     <body>
        <nav class="div1"> 
         <div class="logo">  
             <img src="images/education logo for university college school and your business or company illustration isolated on white background.jfif">
             <h2 class="title1">COURSE</h2>
+        </div>
+        <div class="menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
         </div> 
-        <ul>  
+        <ul id="navlinks">  
             <li><a href="#">Home</a></li> 
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Elements</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#div2">Courses</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
        </nav>
        <br>
        <div class="parent">
-            <div class="div2">
+            <div id="div2" class="div2">
                 <br>
                 <div class="mini1"></div>
                 <h3 class="title2">Online courses</h3>
                 <p class="p1">Explore a wide range of courses designed to help you gain new skills and advance your career all from the comfort of your home</p>
-                <button class="btn">Start Learning</button>
+                <button class="btn1" onclick="show(this)" onmouseover="OnMouseIn(this)"  onmouseout="OnMouseOut(this)">Start Learning</button>
+                <p class="str"></p>
+                <ul>
+                    <li><a href="#" class="link"></a></li>
+                    <li><a href="#" class="link"></a></li>
+                    <li><a href="#" class="link"></a></li>
+                    <li><a href="#" class="link"></a></li>
+                </ul>                   
             </div> 
             <br>
             <div class="div3">
@@ -33,7 +42,14 @@
                 <div class="mini2"></div>
                 <h3 class="title2">Our Library</h3>
                 <p class="p1">Access thousands of books, journals, and digital resources anytime. Our library is your gateway to knowledge and discovery</p>
-                <button class="btn">Browse Library</button>
+                <button class="btn2"  onclick="show(this)" onmouseover="OnMouseIn(this)"  onmouseout="OnMouseOut(this)">Browse Library</button>
+                <p class="str"></p>
+                <ul>
+                    <li><a href="#" class="link"></a></li>
+                    <li><a href="#" class="link"></a></li>
+                    <li><a href="#" class="link"></a></li>
+                    <li><a href="#" class="link"></a></li>
+                </ul>    
             </div>
             <br>
             <div class="div4">
@@ -41,8 +57,61 @@
                 <div class="mini3"></div>
                 <h3 class="title2">Our Teachers</h3>
                 <p class="p1 p2">Learn from experienced and passionate teacher who are dedicated to guiding you every step of the way on your learning journy</p>
-                <button class="btn">Meet The Team</button>
+                <button class="btn3"  onclick="show(this)" onmouseover="OnMouseIn(this)"  onmouseout="OnMouseOut(this)">Meet The Team</button>
+                <p class="str"></p>
+                <ul>
+                    <li><a href="#" class="link"></a></li>
+                    <li><a href="#" class="link"></a></li>
+                    <li><a href="#" class="link"></a></li>
+                    <li><a href="#" class="link"></a></li>
+                </ul>    
             </div>
         </div>
+        <div class="parent2">
+            <section id="about" class="about">
+                <div class="container">
+                    <h2>About Us</h2>
+                    <p>
+                        Welcome to our learning platform. We help students learn web development
+                        in a simple and practical way. Our goal is to make learning easy and enjoyable.
+                    </p>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We are here to help you anytime.</p>
+
+                <div class="contact-info">
+                    <div>Email: support@course.com</div>
+                    <div>Phone: +20 123 456 789</div>
+                    <div>Address: Cairo, Egypt</div>
+                </div>
+            </section>
+        </div>
+        <script>
+            function show(button){
+                let parent = button.parentElement;
+                let text = parent.querySelector(".str");
+                text.innerHTML = "select your level:";
+                let links = parent.querySelectorAll(".link");
+                let levels = ["Level 1", "Level 2", "Level 3", "Level 4"];
+                for (let i = 0; i < links.length; i++) {
+                    links[i].innerHTML = levels[i];
+                }
+            };
+            function OnMouseIn(button){
+                button.style.backgroundColor = "rgb(71, 17, 17)";
+            };
+            function OnMouseOut(button){
+                button.style.backgroundColor = "rgb(99, 158, 76)";
+            };
+            window.onload = function () {
+            alert("Welcome to the Course website");
+            };
+            function toggleMenu(){
+                document.getElementById("navlinks").classList.toggle("active");
+            };
+        </script>                
     </body>
 </html>
