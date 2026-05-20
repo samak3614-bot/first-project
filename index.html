@@ -1,118 +1,418 @@
 <html>
     <head>
-        <title>IA.PRO</title>
+        <title>Velvet Essence</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/all.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     </head>
-    <body>
-       <nav class="div1"> 
-        <div class="logo">  
-            <img src="images/education logo for university college school and your business or company illustration isolated on white background.jfif">
-            <h2 class="title1">COURSE</h2>
-        </div>
-        <div class="menu" onclick="toggleMenu()">
-            <i class="fa-solid fa-bars"></i>
-        </div> 
-        <ul id="navlinks">  
-            <li><a href="#">Home</a></li> 
-            <li><a href="#div2">Courses</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-       </nav>
-       <br>
-       <div class="parent">
-            <div id="div2" class="div2">
-                <br>
-                <div class="mini1"></div>
-                <h3 class="title2">Online courses</h3>
-                <p class="p1">Explore a wide range of courses designed to help you gain new skills and advance your career all from the comfort of your home</p>
-                <button class="btn1" onclick="show(this)" onmouseover="OnMouseIn(this)"  onmouseout="OnMouseOut(this)">Start Learning</button>
-                <p class="str"></p>
-                <ul>
-                    <li><a href="#" class="link"></a></li>
-                    <li><a href="#" class="link"></a></li>
-                    <li><a href="#" class="link"></a></li>
-                    <li><a href="#" class="link"></a></li>
-                </ul>                   
-            </div> 
-            <br>
-            <div class="div3">
-                <br>
-                <div class="mini2"></div>
-                <h3 class="title2">Our Library</h3>
-                <p class="p1">Access thousands of books, journals, and digital resources anytime. Our library is your gateway to knowledge and discovery</p>
-                <button class="btn2"  onclick="show(this)" onmouseover="OnMouseIn(this)"  onmouseout="OnMouseOut(this)">Browse Library</button>
-                <p class="str"></p>
-                <ul>
-                    <li><a href="#" class="link"></a></li>
-                    <li><a href="#" class="link"></a></li>
-                    <li><a href="#" class="link"></a></li>
-                    <li><a href="#" class="link"></a></li>
-                </ul>    
+    <body> 
+        <div class="home">
+            <div class="home-links">
+                <div class="home-links-left">
+                    <a href="#">about us</a>
+                    <a href="#">privacy</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">careers</a>
+                </div>
+                <div class="home-links-right">
+                    <a href="#">my wishlist</a>
+                    <a href="#">track your order</a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
             </div>
-            <br>
-            <div class="div4">
-                <br>
-                <div class="mini3"></div>
-                <h3 class="title2">Our Teachers</h3>
-                <p class="p1 p2">Learn from experienced and passionate teacher who are dedicated to guiding you every step of the way on your learning journy</p>
-                <button class="btn3"  onclick="show(this)" onmouseover="OnMouseIn(this)"  onmouseout="OnMouseOut(this)">Meet The Team</button>
-                <p class="str"></p>
-                <ul>
-                    <li><a href="#" class="link"></a></li>
-                    <li><a href="#" class="link"></a></li>
-                    <li><a href="#" class="link"></a></li>
-                    <li><a href="#" class="link"></a></li>
-                </ul>    
+            <hr> 
+            <div class="home-header">
+                <div class="home-header-left">
+                    <img src="images/opi.jfif">
+                    <h1>Velvet Essence</h1>
+                </div>
+                <div class="home-header-center">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">men</a></li>
+                        <li><a href="#">women</a></li>
+                        <li><a href="#">unisex</a></li>
+                        <div class="home-dropdown">
+                            <li class="list-blog"><a href="#">pages<i class="fa-solid fa-angle-down"></i></a></li>
+                            <div class="dropdown-content">
+                                <div class="column">
+                                    <span class="pages">Pages</span>
+                                    <a href="#">Login</a>
+                                    <a href="#">Cart</a>
+                                    <a href="#">Product Details</a>
+                                    <a href="#">Product Checkout</a>
+                                </div>
+                                <div class="column">
+                                    <span class="blog">Blog</span>
+                                    <a href="#">Element</a>
+                                    <a href="#">Blog Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <div class="home-header-right">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <div class="home-cart"><div class="icon"><i class="fa-solid fa-2"></i></div><i class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+            </div>
+            <div class="home-sale">
+                <p>sale up to 50% biggest discount. hurry! limited period offer </p>
+                <div class="home-line"><a href="#">shop now</a><div class="line"></div></div>                
+            </div>
+            <div class="home-cap">
+                <div class="home-cap-content">
+                     <p class="title1">fashion sale</p>
+                     <h2>Leave a lasting impression</h2>
+                     <p class="cap">Let your scent speak before you do, leaving a soft,<br> unforgettable impression wherever you go.</p>
+                     <button>shop now</button>
+                </div>
++            </div>
+        </div>
+        <div class="product">
+            <div class="product-parent">
+                <div class="product-scale">
+                    <div class="product-sec product-sec1">
+                        <img src="images/download (3).jfif">
+                        <div class="product-btn product-btn1">
+                            <h3 class="product-title">women's section</h3>
+                            <div class="product-line">
+                                <a href="#" class="product-link">shop now</a><div class="p-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-scale">
+                    <div class="product-sec product-sec2">
+                        <img src="images/hhan.jfif">
+                        <div class="product-btn product-btn2">
+                            <h3 class="product-title">men's section</h3>
+                            <div class="product-line">
+                                <a href="#" class="product-link">shop now</a><div class="p-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-scale">
+                    <div class="product-sec product-sec3">
+                        <img src="images/set.jfif">
+                        <div class="product-btn product-btn3">
+                            <h3 class="product-title">unisex section</h3>                       
+                            <div class="product-line">
+                                <a href="#" class="product-link">shop now</a><div class="p-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="parent2">
-            <section id="about" class="about">
-                <div class="container">
-                    <h2>About Us</h2>
-                    <p>
-                        Welcome to our learning platform. We help students learn web development
-                        in a simple and practical way. Our goal is to make learning easy and enjoyable.
-                    </p>
+        <div class="trending">
+            <div class="trending-left">
+                <p>trending ocean collection</p>
+            </div>
+            <div class="trending-right">
+                <a href="#">men</a>
+                <div class="trending-select"><a href="#">women</a><div class="trending-line"></div></div>
+                <a href="#">unisex</a>
+            </div>
+        </div>
+        <div class="line-break"></div>
+        <div class="scroll">
+            <div class="scroll-parent">
+                <i class="fa-solid fa-angle-left scroll-icon"></i>
+                <section class="scroll-sec scroll-sec1">
+                    <div class="scroll-front scroll-front1"></div>
+                    <div class="scroll-back scroll-back1"></div>
+                    <div class="scroll-icons">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                    <div class="scroll-cap">
+                        <h3>coastal dream</h3>
+                        <span>$150</span><span class="scroll-cap-span">$190</span>
+                    </div>
+                </section>
+                <section class="scroll-sec scroll-sec2">
+                    <div class="scroll-front scroll-front2"></div>
+                    <div class="scroll-back scroll-back2"></div>
+                    <div class="scroll-icons">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                    <div class="scroll-cap">
+                        <h3>sea pearl</h3>
+                        <span>$100</span><span class="scroll-cap-span">$150</span>
+                    </div>
+                </section>
+                <section class="scroll-sec scroll-sec3">
+                    <div class="scroll-front scroll-front3"></div>
+                    <div class="scroll-back scroll-back3"></div>
+                    <div class="scroll-icons">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                    <div class="scroll-cap">
+                        <h3>crystal waves</h3>
+                        <span>$120</span><span class="scroll-cap-span">$180</span>
+                    </div>
+                </section>
+                <section class="scroll-sec scroll-sec4">
+                    <div class="scroll-front scroll-front4"></div>
+                    <div class="scroll-back scroll-back4"></div>
+                    <div class="scroll-icons">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                    <div class="scroll-cap">
+                        <h3>marine mist</h3>
+                        <span>$200</span><span class="scroll-cap-span">$250</span>
+                    </div>
+                </section>
+                <i class="fa-solid fa-angle-right scroll-icon"></i>
+            </div>
+        </div>
+        <div class="caption-line"></div>
+        <div class="caption">
+            <div class="caption-parent">
+                <i class="fa-solid fa-angle-left caption-icon"></i>
+                <div class="caption-content">
+                    <h3>customer testimonial</h3>
+                    <p>I’ve tried many fragrances, but nothing compares to the elegance and lasting power of Ocean. The scent is fresh, sophisticated,
+                         and unforgettable. Every time I wear it, I receive compliments and feel more confident.</p>
+                    <div class="caption-person">
+                        <div class="caption-img"></div>
+                        <div class="caption-img-cap">
+                            <h4>Emma Williams</h4>
+                            <span>Fragrance Chemist</span>
+                        </div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-angle-right caption-icon"></i>
+            </div>
+        </div>
+        <div class="caption-line"></div>
+        <div class="may-header">
+            <h2>you may like</h2>
+        </div>
+        <div class="may">
+            <div class="may-parent">
+                <i class="fa-solid fa-angle-left may-icon"></i>
+                <section class="may-sec may-sec1">
+                    <div class="may-front may-front1"></div>
+                    <div class="may-back may-back1"></div>
+                    <div class="may-icons">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                    <div class="may-cap">
+                        <h3>Golden Aura</h3>
+                        <span>$200</span><span class="may-cap-span">$300</span>
+                    </div>
+                </section>
+                <section class="may-sec may-sec2">
+                    <div class="may-front may-front2"></div>
+                    <div class="may-back may-back2"></div>
+                    <div class="may-icons">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                    <div class="may-cap">
+                        <h3>Pure Elixir</h3>
+                        <span>$130</span><span class="may-cap-span">$190</span>
+                    </div>
+                </section>
+                <section class="may-sec may-sec3">
+                    <div class="may-front may-front3"></div>
+                    <div class="may-back may-back3"></div>
+                    <div class="may-icons">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                    <div class="may-cap">
+                        <h3>Moonlit Rose</h3>
+                        <span>$199</span><span class="may-cap-span">$250</span>
+                    </div>
+                </section>
+                <section class="may-sec may-sec4">
+                    <div class="may-front may-front4"></div>
+                    <div class="may-back may-back4"></div>
+                    <div class="may-icons">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                    <div class="may-cap">
+                        <h3>Secret Garden</h3>
+                        <span>$200</span><span class="may-cap-span">$270</span>
+                    </div>
+                </section>
+                <i class="fa-solid fa-angle-right may-icon"></i>
+            </div>
+        </div>
+        <div class="about-line"></div>
+        <div class="about-title">
+            <h2>about us</h2>
+        </div>
+        <div class="about">
+            <div class="about-container">
+                <section class="about-sec about-sec1">
+                    <div class="about-img about-img1"></div>
+                    <div class="about-cap">
+                        <span>the process</span>
+                        <h3>Blend the Fragrance</h3>
+                        <p>Our Master Perfumer combines carefully selected notes such as flowers,
+                        fruits, woods, and musk to create a unique scent.</p>
+                        <a href="#">read more</a>
+                    </div>
+                </section>
+                <section class="about-sec about-sec2">
+                    <div class="about-img about-img2"></div>
+                    <div class="about-cap">
+                        <span>the process</span>
+                        <h3>Mature the Formula</h3>
+                        <p>The fragrance mixture is left to rest so the ingredients can blend
+                        together and develop a richer, smoother aroma.</p>
+                        <a href="#">read more</a>
+                    </div>
+                </section>
+                <section class="about-sec about-sec3">
+                    <div class="about-img about-img3"></div>
+                    <div class="about-cap">
+                        <span>the process</span>
+                        <h3>Bottle the Perfume</h3>
+                        <p>The finished perfume is filtered, poured into elegant bottles,
+                        and prepared to be enjoyed.Fill and package the final perfume.</p>
+                        <a href="#">read more</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="about-line"></div>
+        <div class="icoon">
+            <section class="icon-sec">
+                <div class="icon-icon">
+                    <i class="fa-solid fa-truck"></i>
+                    <i class="fa-solid fa-truck ico"></i>
+                </div>
+                <div class="icon-cap">
+                    <h3>fast & free delivery</h3>
+                    <p>free delivery on all orders</p>
                 </div>
             </section>
-            <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <p>We are here to help you anytime.</p>
-
-                <div class="contact-info">
-                    <div>Email: support@course.com</div>
-                    <div>Phone: +20 123 456 789</div>
-                    <div>Address: Cairo, Egypt</div>
+            <section class="icon-sec">
+                <div class="icon-icon">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <i class="fa-solid fa-money-check-dollar ico"></i>
+                </div>
+                <div class="icon-cap">
+                    <h3>secure payment</h3>
+                    <p>advanced encryption technology</p>
+                </div>
+            </section>
+            <section class="icon-sec">
+                <div class="icon-icon">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <i class="fa-solid fa-money-bill-wave ico"></i>
+                </div>
+                <div class="icon-cap">
+                    <h3>money back guarantee</h3>
+                    <p>trust & reliable</p>
+                </div>
+            </section>
+            <section class="icon-sec">
+                <div class="icon-icon">
+                    <i class="fa-solid fa-user-clock"></i>
+                    <i class="fa-solid fa-user-clock ico"></i>
+                </div>
+                <div class="icon-cap">
+                    <h3>online support</h3>
+                    <p>available 24 hours</p>
                 </div>
             </section>
         </div>
-        <script>
-            function show(button){
-                let parent = button.parentElement;
-                let text = parent.querySelector(".str");
-                text.innerHTML = "select your level:";
-                let links = parent.querySelectorAll(".link");
-                let levels = ["Level 1", "Level 2", "Level 3", "Level 4"];
-                for (let i = 0; i < links.length; i++) {
-                    links[i].innerHTML = levels[i];
-                }
-            };
-            function OnMouseIn(button){
-                button.style.backgroundColor = "rgb(71, 17, 17)";
-            };
-            function OnMouseOut(button){
-                button.style.backgroundColor = "rgb(99, 158, 76)";
-            };
-            window.onload = function () {
-            alert("Welcome to the Course website");
-            };
-            function toggleMenu(){
-                document.getElementById("navlinks").classList.toggle("active");
-            };
-        </script>                
+        <div class="footer">
+            <div class="footer-sec">
+                <div class="footer-left">
+                    <h3>subscribe newsletter</h3>
+                    <p>subscribe newsletter to get 5% on all products.</p>
+                </div>
+                <div class="footer-center">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button>subscribe</button>
+                </div>
+                <div class="footer-right">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-sec footer-sec2">
+                <div class="footer-1th">
+                    <img src="images/opi.jfif">
+                    <h1>Velvet Essence</h1>
+                </div>
+                <div class="footer-2th">
+                   <ul>
+                        <li><h3>men's perfume</h3></li>
+                        <li><a href="#">Ocean Noir</a></li>
+                        <li><a href="#">Deep Current</a></li>
+                        <li><a href="#">Midnight Tide</a></li>
+                        <li><a href="#">Blue Storm</a></li>
+                        <li><a href="#">Neptune Elite</a></li>
+                    </ul>
+                </div>
+                <div class="footer-3th">
+                   <ul>
+                        <li><h3>women's perfume</h3></li>
+                        <li><a href="#">Ocean Bloom</a></li>
+                        <li><a href="#">Pearl Mist</a></li>
+                        <li><a href="#">Azure Rose</a></li>
+                        <li><a href="#">Moonlit Wave</a></li>
+                        <li><a href="#">Sea Whisper</a></li>
+                    </ul>
+                </div>
+                <div class="footer-4th">
+                   <ul>
+                        <li><h3>unisex perfume</h3></li>
+                        <li><a href="#">Infinite Blue</a></li> 
+                        <li><a href="#">Salt & Silk</a></li>
+                        <li><a href="#">Coastal Essence</a></li>
+                        <li><a href="#">Aqua Horizon</a></li>
+                        <li><a href="#">Crystal Tide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-5th">
+                   <ul>
+                        <li><h3>quick links</h3></li>
+                        <li><a href="#">track order</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">contacts</a></li>
+                    </ul>                   
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-end">
+                <p>copyright <i class="fa-regular fa-copyright"></i> 2023 all rights are reserved | this template is made with
+                    <i class="fa-solid fa-heart heart"></i> by <a href="#">colorlib</a></p>
+            </div>
+        </div>
     </body>
 </html>
