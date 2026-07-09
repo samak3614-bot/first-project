@@ -1,417 +1,232 @@
 <html>
     <head>
-        <title>Velvet Essence</title>
+        <title>CozyFeel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/all.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body> 
-        <div class="home">
-            <div class="home-links">
-                <div class="home-links-left">
-                    <a href="#">about us</a>
-                    <a href="#">privacy</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">careers</a>
-                </div>
-                <div class="home-links-right">
-                    <a href="#">my wishlist</a>
-                    <a href="#">track your order</a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-            <hr> 
-            <div class="home-header">
-                <div class="home-header-left">
-                    <img src="images/opi.jfif">
-                    <h1>Velvet Essence</h1>
-                </div>
-                <div class="home-header-center">
-                    <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">men</a></li>
-                        <li><a href="#">women</a></li>
-                        <li><a href="#">unisex</a></li>
-                        <div class="home-dropdown">
-                            <li class="list-blog"><a href="#">pages<i class="fa-solid fa-angle-down"></i></a></li>
-                            <div class="dropdown-content">
-                                <div class="column">
-                                    <span class="pages">Pages</span>
-                                    <a href="#">Login</a>
-                                    <a href="#">Cart</a>
-                                    <a href="#">Product Details</a>
-                                    <a href="#">Product Checkout</a>
-                                </div>
-                                <div class="column">
-                                    <span class="blog">Blog</span>
-                                    <a href="#">Element</a>
-                                    <a href="#">Blog Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </div>
-                <div class="home-header-right">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-regular fa-user"></i>
-                    <div class="home-cart"><div class="icon"><i class="fa-solid fa-2"></i></div><i class="fa-solid fa-cart-shopping"></i></div>
-                </div>
-            </div>
-            <div class="home-sale">
-                <p>sale up to 50% biggest discount. hurry! limited period offer </p>
-                <div class="home-line"><a href="#">shop now</a><div class="line"></div></div>                
-            </div>
-            <div class="home-cap">
-                <div class="home-cap-content">
-                     <p class="title1">fashion sale</p>
-                     <h2>Leave a lasting impression</h2>
-                     <p class="cap">Let your scent speak before you do, leaving a soft,<br> unforgettable impression wherever you go.</p>
-                     <button>shop now</button>
-                </div>
-+            </div>
-        </div>
-        <div class="product">
-            <div class="product-parent">
-                <div class="product-scale">
-                    <div class="product-sec product-sec1">
-                        <img src="images/download (3).jfif">
-                        <div class="product-btn product-btn1">
-                            <h3 class="product-title">women's section</h3>
-                            <div class="product-line">
-                                <a href="#" class="product-link">shop now</a><div class="p-line"></div>
-                            </div>
-                        </div>
+    <body>
+        <div class="bg-image bg-[url('images/mus.jfif')] bg-cover bg-center bg-no-repeat min-h-screen ">
+            <div class="bg-layout w-full min-h-screen bg-black/45">
+                <div class="parent1 w-full min-h-12 bg-red-950 px-28 flex justify-between items-center shadow-md shadow-gray-900 capitalize fixed z-10">
+                    <div class="flex  space-x-4 ">
+                        <h1 class="text-white text-2xl font-bold">cozyFeel</h1>
+                        <div class="h-fit w-fit bg-yellow-50/40 text-yellow-50 text-xs rounded-full px-2 mt-1 font-medium">decoration office</div>
+                    </div>
+                    <div class="list hidden md:flex gap-8 text-white text-xs">
+                        <a href="#" class="hover:text-amber-100">home</a>
+                        <a href="#" class="hover:text-amber-100">services</a>
+                        <a href="#" class="hover:text-amber-100">our work</a>
+                        <a href="#" class="hover:text-amber-100">our team</a>
+                        <a href="#" class="hover:text-amber-100">contact us</a>
+                    </div>
+                    <div>
+                        <button class="bg-yellow-50 text-red-950 text-xs rounded py-2 px-4 font-medium shadow shadow-none hover:shadow-lg hover:shadow-black hover:text-black hover:bg-amber-100">Get a consultation</button>
                     </div>
                 </div>
-                <div class="product-scale">
-                    <div class="product-sec product-sec2">
-                        <img src="images/hhan.jfif">
-                        <div class="product-btn product-btn2">
-                            <h3 class="product-title">men's section</h3>
-                            <div class="product-line">
-                                <a href="#" class="product-link">shop now</a><div class="p-line"></div>
-                            </div>
+                <div class="parent2 w-full min-h-[590px] flex justify-center pt-48 gap-8">
+                    <div class="w-[550px] h-[270px] bg-red-950/45 rounded-2xl px-8">
+                        <h2 class="text-4xl text-white font-bold capitalize">turn your house <span class="text-amber-500">into</span> a <br>home</h2>
+                        <p class="text-xs text-white/45 mt-8">Discover elegant home décor that blends comfort, style, and functionality.
+                                From modern accents to cozy essentials, we help you create a space you'll
+                                love coming home to.</p>
+                        <ul class="c-list flex gap-4 text-xs text-white mt-6">
+                            <li class="space-x-1"><i class="fa-solid fa-check bg-green-500 rounded-full p-0.5"></i><span>10+ years experience</span></li>
+                            <li class="space-x-1"><i class="fa-solid fa-check bg-green-500 rounded-full p-0.5"></i><span>+500 clients</span></li>
+                            <li class="space-x-1"><i class="fa-solid fa-check bg-green-500 rounded-full p-0.5"></i><span>professional team</span></li>
+                        </ul>
+                        <div class="c-button flex mt-8 gap-4">
+                            <button class="w-[170px] h-[35px] bg-amber-500 text-white text-xs rounded-xl font-medium shadow  shadow-none hover:bg-amber-600 hover:shadow-black hover:shadow-lg">start your own experience</button>
+                            <button class="w-[140px] h-[35px] bg-white text-red-950 text-xs rounded-xl font-medium border border-1 border-gray-500 hover:border-amber-500 hover:text-black"><i class="fa-solid fa-play text-amber-500 mr-2 text-sm"></i>watch the video</button>
                         </div>
                     </div>
-                </div>
-                <div class="product-scale">
-                    <div class="product-sec product-sec3">
-                        <img src="images/set.jfif">
-                        <div class="product-btn product-btn3">
-                            <h3 class="product-title">unisex section</h3>                       
-                            <div class="product-line">
-                                <a href="#" class="product-link">shop now</a><div class="p-line"></div>
+                    <div class="w-[550px] h-[270px] rounded-2xl bg-gradient-to-r from-red-950 via-red-700 to-orange-200">
+                        <div class="w-28 h-16 bg-yellow-50 rounded-xl flex gap-2 pl-1 pt-4 mt-[220px] ml-[-17px] shadow shadow-lg shadow-black">
+                            <i class="fa-solid fa-paintbrush text-xl"></i>
+                            <div>
+                                <p class=" text-xs text-gray-600">color paletts</p>
+                                <span class="font-bold p-2">+60</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="trending">
-            <div class="trending-left">
-                <p>trending ocean collection</p>
+        <div class="h-[190px] w-full text-center pt-12">
+            <h2 class="text-2xl font-bold capitalize">our integrated services</h2>
+            <p class="text-sm text-black/70 pt-[10px]">we offer comprehensive range of ideas to decorate your home</p>
+            <div class="h-[3px] w-[85px] mx-auto bg-amber-500 mt-4"></div>
+        </div>
+        <div class="services min-h-[350px] w-full flex gap-6 justify-center">
+            <div class="group h-[79%] w-[27%] border border-1 border-black/25 rounded-2xl p-4 shadow-none hover:shadow-2xl hover:shadow-red-200 hover:border-red-500 transition-all duration-[0.5s]">
+                <div class="size-[50px] rounded-lg bg-red-600 group-hover:bg-amber-100"><i class="fa-solid fa-house text-2xl p-[10px] text-white group-hover:text-red-600"></i></div>
+                <h3 class="text-lg font-bold capitalize pt-4 pb-2">interior designing</h3>
+                <p class="text-xs text-black/70 font-medium pb-4">Creates stylish and comfortable spaces that match the client's vision and lifestyle.</p>
+                <ul class="text-xs text-black/55 font-medium space-y-2">
+                    <li><i class="fa-solid fa-check text-green-600"></i> Create room layouts and floor plans</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Choose furniture, colors, and materials</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Present design ideas to clients</li>
+                </ul>
             </div>
-            <div class="trending-right">
-                <a href="#">men</a>
-                <div class="trending-select"><a href="#">women</a><div class="trending-line"></div></div>
-                <a href="#">unisex</a>
+            <div class="group h-[79%] w-[27%] border border-1 border-black/25 rounded-2xl p-4 shadow-none hover:shadow-2xl hover:shadow-amber-200 hover:border-amber-500 transition-all duration-[0.5s]">
+                <div class="size-[50px] rounded-lg bg-amber-100 group-hover:bg-amber-300"><i class="fa-regular fa-clock text-2xl pt-[11px] pl-[12px] text-red-700 group-hover:text-white"></i></div>
+                <h3 class="text-lg font-bold capitalize pt-4 pb-2">project management</h3>
+                <p class="text-xs text-black/70 font-medium pb-4">Ensures every project is completed on time, within budget, and to a high standard.</p>
+                <ul class="text-xs text-black/55 font-medium space-y-2">
+                    <li><i class="fa-solid fa-check text-green-600"></i> Schedule project timelines</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Coordinate workers and suppliers</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Monitor budget and quality</li>
+                </ul>
+            </div>
+            <div class="group h-[79%] w-[27%] border border-1 border-black/25 rounded-2xl p-4 shadow-none hover:shadow-2xl hover:shadow-orange-200 hover:border-orange-600 transition-all duration-[0.5s]">
+                <div class="size-[50px] rounded-lg bg-orange-400 group-hover:bg-amber-200"><i class="fa-solid fa-layer-group text-2xl p-[10px] text-white group-hover:text-orange-500"></i></div>
+                <h3 class="text-lg font-bold capitalize pt-4 pb-2">3D visualizing</h3>
+                <p class="text-xs text-black/70 font-medium pb-4">Helps clients visualize their future space before construction or decoration begins.</p>
+                <ul class="text-xs text-black/55 font-medium space-y-2">
+                    <li><i class="fa-solid fa-check text-green-600"></i> Create 3D models of rooms</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Render realistic images and animations</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Revise designs based on client feedback</li>
+                </ul>
             </div>
         </div>
-        <div class="line-break"></div>
-        <div class="scroll">
-            <div class="scroll-parent">
-                <i class="fa-solid fa-angle-left scroll-icon"></i>
-                <section class="scroll-sec scroll-sec1">
-                    <div class="scroll-front scroll-front1"></div>
-                    <div class="scroll-back scroll-back1"></div>
-                    <div class="scroll-icons">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
-                    <div class="scroll-cap">
-                        <h3>coastal dream</h3>
-                        <span>$150</span><span class="scroll-cap-span">$190</span>
-                    </div>
-                </section>
-                <section class="scroll-sec scroll-sec2">
-                    <div class="scroll-front scroll-front2"></div>
-                    <div class="scroll-back scroll-back2"></div>
-                    <div class="scroll-icons">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
-                    <div class="scroll-cap">
-                        <h3>sea pearl</h3>
-                        <span>$100</span><span class="scroll-cap-span">$150</span>
-                    </div>
-                </section>
-                <section class="scroll-sec scroll-sec3">
-                    <div class="scroll-front scroll-front3"></div>
-                    <div class="scroll-back scroll-back3"></div>
-                    <div class="scroll-icons">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
-                    <div class="scroll-cap">
-                        <h3>crystal waves</h3>
-                        <span>$120</span><span class="scroll-cap-span">$180</span>
-                    </div>
-                </section>
-                <section class="scroll-sec scroll-sec4">
-                    <div class="scroll-front scroll-front4"></div>
-                    <div class="scroll-back scroll-back4"></div>
-                    <div class="scroll-icons">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
-                    <div class="scroll-cap">
-                        <h3>marine mist</h3>
-                        <span>$200</span><span class="scroll-cap-span">$250</span>
-                    </div>
-                </section>
-                <i class="fa-solid fa-angle-right scroll-icon"></i>
+        <div class="numbers min-h-[160px] w-full flex justify-center gap-28 capitalize items-center bg-gradient-to-r from-orange-600 to-amber-300">
+            <div class="text-center">
+                <span class="font-bold text-4xl text-white">+300</span>
+                <p class="text-white pl-[20px]">clients worldwide</p>
+            </div>
+            <div class="text-center">
+                <span class="font-bold text-4xl text-white">+700</span>
+                <p class="text-white pl-[20px]">projects completed</p>
+            </div>
+            <div class="text-center">
+                <span class="font-bold text-4xl text-white">+20</span>
+                <p class="text-white pl-[20px]">marketing experts</p>
+            </div>
+            <div class="text-center">
+                <span class="font-bold text-4xl text-white">+12</span>
+                <p class="text-white pl-[20px]">years of experience</p>
             </div>
         </div>
-        <div class="caption-line"></div>
-        <div class="caption">
-            <div class="caption-parent">
-                <i class="fa-solid fa-angle-left caption-icon"></i>
-                <div class="caption-content">
-                    <h3>customer testimonial</h3>
-                    <p>I’ve tried many fragrances, but nothing compares to the elegance and lasting power of Ocean. The scent is fresh, sophisticated,
-                         and unforgettable. Every time I wear it, I receive compliments and feel more confident.</p>
-                    <div class="caption-person">
-                        <div class="caption-img"></div>
-                        <div class="caption-img-cap">
-                            <h4>Emma Williams</h4>
-                            <span>Fragrance Chemist</span>
+        <div>
+            <div class="h-[155px] w-full text-center pt-12">
+                <h2 class="text-2xl font-bold capitalize">our creative team</h2>
+                <p class="text-sm text-black/70 pt-[10px]">An elite group of the best designers and experts</p>
+            </div>
+            <div class="team min-h-[350px] w-full flex justify-center gap-8">
+                <div class="group h-[290px] w-[19%] rounded-2xl shadow shadow-xl shadow-gray-200 hover:shadow-xl hover:shadow-gray-300">
+                    <div class="relative h-[60%] w-[100%] flex justify-center items-center rounded-b rounded-2xl bg-gradient-to-r from-red-600 via-red-500 to-orange-500">
+                        <i class="fa-solid fa-circle-user text-7xl text-white"></i>
+                        <div class="absolute h-[100%] w-[100%] bg-black/25 rounded-b rounded-2xl hidden group-hover:flex justify-center items-center gap-4">
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-facebook-f text-red-600"></i></div>
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-twitter text-red-500"></i></div>
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-linkedin-in text-orange-600"></i></div>
                         </div>
                     </div>
+                    <div class="h-[30%] w-[100%] text-center p-6">
+                        <h3 class="text-sm font-bold">Emma Carter</h3>
+                        <p class="text-xs text-red-600 pt-1">Interior Designer</p>
+                        <p class="text-xs text-black/60 pt-2">design degree, AutoCAD/SketchUp skills</p>
+                    </div>
                 </div>
-                <i class="fa-solid fa-angle-right caption-icon"></i>
+                <div class="group h-[290px] w-[19%] rounded-2xl shadow shadow-xl shadow-gray-200 hover:shadow-xl hover:shadow-gray-300">
+                    <div class="relative h-[60%] w-[100%] flex justify-center items-center rounded-b rounded-2xl bg-gradient-to-r from-orange-600 via-orange-400 to-amber-400">
+                        <i class="fa-solid fa-circle-user text-7xl text-white"></i>
+                        <div class="absolute h-[100%] w-[100%] bg-black/25 rounded-b rounded-2xl hidden group-hover:flex justify-center items-center gap-4">
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-facebook-f text-orange-600"></i></div>
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-twitter text-orange-500"></i></div>
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-linkedin-in text-amber-400"></i></div>
+                        </div>
+                    </div>
+                    <div class="h-[30%] w-[100%] text-center p-6">
+                        <h3 class="text-sm font-bold">Daniel Brooks</h3>
+                        <p class="text-xs text-orange-500 pt-1">Project Manager</p>
+                        <p class="text-xs text-black/60 pt-2">Leadership, organization, budgeting skills</p>
+                    </div>
+                </div>
+                <div class="group h-[290px] w-[19%] rounded-2xl shadow shadow-xl shadow-gray-200 hover:shadow-xl hover:shadow-gray-300">
+                    <div class="relative h-[60%] w-[100%] flex justify-center items-center rounded-b rounded-2xl bg-gradient-to-r from-amber-500 via-yellow-400 to-yellow-300">
+                        <i class="fa-solid fa-circle-user text-7xl text-white"></i>
+                        <div class="absolute h-[100%] w-[100%] bg-black/25 rounded-b rounded-2xl hidden group-hover:flex justify-center items-center gap-4">
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-facebook-f text-amber-500"></i></div>
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-twitter text-yellow-400"></i></div>
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-linkedin-in text-yellow-300"></i></div>
+                        </div>
+                    </div>
+                    <div class="h-[30%] w-[100%] text-center p-6">
+                        <h3 class="text-sm font-bold">Sophia Bennett</h3>
+                        <p class="text-xs text-amber-400 pt-1">3D Visualizer</p>
+                        <p class="text-xs text-black/60 pt-2">3D modeling skills, attention to detail</p>
+                    </div>
+                </div> 
+                <div class="group h-[290px] w-[19%] rounded-2xl shadow shadow-xl shadow-gray-200 hover:shadow-xl hover:shadow-gray-300">
+                    <div class="relative h-[60%] w-[100%] flex justify-center items-center rounded-b rounded-2xl bg-gradient-to-r from-yellow-400 via-lime-300 to-lime-400">
+                        <i class="fa-solid fa-circle-user text-7xl text-white"></i>
+                        <div class="absolute h-[100%] w-[100%] bg-black/25 rounded-b rounded-2xl hidden group-hover:flex justify-center items-center gap-4">
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-facebook-f text-yellow-400"></i></div>
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-twitter text-lime-300"></i></div>
+                            <div class="h-[40px] w-[40px] rounded-full bg-white/80 text-center pt-[12px]"><i class="fa-brands fa-linkedin-in text-lime-400"></i></div>
+                        </div>
+                    </div>
+                    <div class="h-[30%] w-[100%] text-center p-6">
+                        <h3 class="text-sm font-bold">Michael Turner</h3>
+                        <p class="text-xs text-lime-600 pt-1">Color & Material Consultant</p>
+                        <p class="text-xs text-black/60 pt-2">Knowledge of color theory, good sense of style</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="caption-line"></div>
-        <div class="may-header">
-            <h2>you may like</h2>
-        </div>
-        <div class="may">
-            <div class="may-parent">
-                <i class="fa-solid fa-angle-left may-icon"></i>
-                <section class="may-sec may-sec1">
-                    <div class="may-front may-front1"></div>
-                    <div class="may-back may-back1"></div>
-                    <div class="may-icons">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
-                    <div class="may-cap">
-                        <h3>Golden Aura</h3>
-                        <span>$200</span><span class="may-cap-span">$300</span>
-                    </div>
-                </section>
-                <section class="may-sec may-sec2">
-                    <div class="may-front may-front2"></div>
-                    <div class="may-back may-back2"></div>
-                    <div class="may-icons">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
-                    <div class="may-cap">
-                        <h3>Pure Elixir</h3>
-                        <span>$130</span><span class="may-cap-span">$190</span>
-                    </div>
-                </section>
-                <section class="may-sec may-sec3">
-                    <div class="may-front may-front3"></div>
-                    <div class="may-back may-back3"></div>
-                    <div class="may-icons">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
-                    <div class="may-cap">
-                        <h3>Moonlit Rose</h3>
-                        <span>$199</span><span class="may-cap-span">$250</span>
-                    </div>
-                </section>
-                <section class="may-sec may-sec4">
-                    <div class="may-front may-front4"></div>
-                    <div class="may-back may-back4"></div>
-                    <div class="may-icons">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
-                    <div class="may-cap">
-                        <h3>Secret Garden</h3>
-                        <span>$200</span><span class="may-cap-span">$270</span>
-                    </div>
-                </section>
-                <i class="fa-solid fa-angle-right may-icon"></i>
+        <div class="contacts min-h-[490px] w-full flex justify-center items-center gap-8 bg-red-950 capitalize">
+            <div class="h-[82%] w-[40%] space-y-4 p-6 rounded-2xl bg-red-200/10">
+                <h3 class="text-white text-md font-bold">contact us</h3>
+                <input type="text" placeholder="Full Name" class="h-[50px] w-full p-4 rounded-md border border-1 border-gray-500 focus:ring-amber-500 focus:ring-2 focus:outline-none ">
+                <input type="email" placeholder="Email Address" class="h-[50px] w-full p-4 rounded-md border border-1 border-gray-500 focus:ring-amber-500 focus:ring-2 focus:outline-none">
+                <textarea placeholder="Your message.." class="h-[110px] w-full p-4 rounded-md border border-1 border-gray-500 focus:ring-amber-500 focus:ring-2 focus:outline-none"></textarea>
+                <button class="h-[50px] w-full rounded-md bg-amber-400 text-white hover:bg-amber-500">send message</button>
+            </div>
+            <div class="h-[82%] w-[35%] space-y-8 ">
+                <h3 class="text-white text-md font-bold">contact information</h3>
+                <ul class="space-y-2">
+                    <li class="flex gap-4">
+                        <div class="h-[40px] w-[40px] bg-red-500/20 rounded-md text-center pt-[13px]"><i class="fa-solid fa-location-dot text-xs text-red-600"></i></div>
+                        <div class="text-xs capitalize">
+                            <p class="text-white/60">address</p>
+                            <p class="text-white">cairo,egypt</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="h-[40px] w-[40px] bg-red-500/20 rounded-md text-center pt-[13px]"><i class="fa-solid fa-phone text-xs text-red-600"></i></div>
+                        <div class="text-xs capitalize">
+                            <p class="text-white/60">phone</p>
+                            <p class="text-white">+20 103 387 4339</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="h-[40px] w-[40px] bg-red-500/20 rounded-md text-center pt-[13px]"><i class="fa-solid fa-envelope  text-xs text-red-600"></i></div>
+                        <div class="text-xs capitalize">
+                            <p class="text-white/60">email</p>
+                            <p class="text-white">cozyfeel@gmail.com</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="h-[135px] w-full text-center pt-[50px] bg-gradient-to-l from-red-600 via-orange-400 to-amber-400 rounded-xl">
+                    <i class="fa-solid fa-map-location-dot text-3xl text-white/80"></i>
+                    <span class="text-md text-white/80">site map</span>
+                </div>
             </div>
         </div>
-        <div class="about-line"></div>
-        <div class="about-title">
-            <h2>about us</h2>
-        </div>
-        <div class="about">
-            <div class="about-container">
-                <section class="about-sec about-sec1">
-                    <div class="about-img about-img1"></div>
-                    <div class="about-cap">
-                        <span>the process</span>
-                        <h3>Blend the Fragrance</h3>
-                        <p>Our Master Perfumer combines carefully selected notes such as flowers,
-                        fruits, woods, and musk to create a unique scent.</p>
-                        <a href="#">read more</a>
-                    </div>
-                </section>
-                <section class="about-sec about-sec2">
-                    <div class="about-img about-img2"></div>
-                    <div class="about-cap">
-                        <span>the process</span>
-                        <h3>Mature the Formula</h3>
-                        <p>The fragrance mixture is left to rest so the ingredients can blend
-                        together and develop a richer, smoother aroma.</p>
-                        <a href="#">read more</a>
-                    </div>
-                </section>
-                <section class="about-sec about-sec3">
-                    <div class="about-img about-img3"></div>
-                    <div class="about-cap">
-                        <span>the process</span>
-                        <h3>Bottle the Perfume</h3>
-                        <p>The finished perfume is filtered, poured into elegant bottles,
-                        and prepared to be enjoyed.Fill and package the final perfume.</p>
-                        <a href="#">read more</a>
-                    </div>
-                </section>
+        <div class="h-[0.5px] w-full bg-gray-800"></div>
+        <div class="footer h-[60px] w-full bg-red-950 flex justify-between items-center px-[120px]">
+            <div class="flex gap-1 text-white/60 text-xs">
+                <i class="fa-regular fa-copyright pt-1"></i>
+                <p>2026 CozyFeel.All rights reserved</p>
             </div>
-        </div>
-        <div class="about-line"></div>
-        <div class="icoon">
-            <section class="icon-sec">
-                <div class="icon-icon">
-                    <i class="fa-solid fa-truck"></i>
-                    <i class="fa-solid fa-truck ico"></i>
-                </div>
-                <div class="icon-cap">
-                    <h3>fast & free delivery</h3>
-                    <p>free delivery on all orders</p>
-                </div>
-            </section>
-            <section class="icon-sec">
-                <div class="icon-icon">
-                    <i class="fa-solid fa-money-check-dollar"></i>
-                    <i class="fa-solid fa-money-check-dollar ico"></i>
-                </div>
-                <div class="icon-cap">
-                    <h3>secure payment</h3>
-                    <p>advanced encryption technology</p>
-                </div>
-            </section>
-            <section class="icon-sec">
-                <div class="icon-icon">
-                    <i class="fa-solid fa-money-bill-wave"></i>
-                    <i class="fa-solid fa-money-bill-wave ico"></i>
-                </div>
-                <div class="icon-cap">
-                    <h3>money back guarantee</h3>
-                    <p>trust & reliable</p>
-                </div>
-            </section>
-            <section class="icon-sec">
-                <div class="icon-icon">
-                    <i class="fa-solid fa-user-clock"></i>
-                    <i class="fa-solid fa-user-clock ico"></i>
-                </div>
-                <div class="icon-cap">
-                    <h3>online support</h3>
-                    <p>available 24 hours</p>
-                </div>
-            </section>
-        </div>
-        <div class="footer">
-            <div class="footer-sec">
-                <div class="footer-left">
-                    <h3>subscribe newsletter</h3>
-                    <p>subscribe newsletter to get 5% on all products.</p>
-                </div>
-                <div class="footer-center">
-                    <input type="email" placeholder="Enter Your Email">
-                    <button>subscribe</button>
-                </div>
-                <div class="footer-right">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-            <div class="footer-line"></div>
-            <div class="footer-sec footer-sec2">
-                <div class="footer-1th">
-                    <img src="images/opi.jfif">
-                    <h1>Velvet Essence</h1>
-                </div>
-                <div class="footer-2th">
-                   <ul>
-                        <li><h3>men's perfume</h3></li>
-                        <li><a href="#">Ocean Noir</a></li>
-                        <li><a href="#">Deep Current</a></li>
-                        <li><a href="#">Midnight Tide</a></li>
-                        <li><a href="#">Blue Storm</a></li>
-                        <li><a href="#">Neptune Elite</a></li>
-                    </ul>
-                </div>
-                <div class="footer-3th">
-                   <ul>
-                        <li><h3>women's perfume</h3></li>
-                        <li><a href="#">Ocean Bloom</a></li>
-                        <li><a href="#">Pearl Mist</a></li>
-                        <li><a href="#">Azure Rose</a></li>
-                        <li><a href="#">Moonlit Wave</a></li>
-                        <li><a href="#">Sea Whisper</a></li>
-                    </ul>
-                </div>
-                <div class="footer-4th">
-                   <ul>
-                        <li><h3>unisex perfume</h3></li>
-                        <li><a href="#">Infinite Blue</a></li> 
-                        <li><a href="#">Salt & Silk</a></li>
-                        <li><a href="#">Coastal Essence</a></li>
-                        <li><a href="#">Aqua Horizon</a></li>
-                        <li><a href="#">Crystal Tide</a></li>
-                    </ul>
-                </div>
-                <div class="footer-5th">
-                   <ul>
-                        <li><h3>quick links</h3></li>
-                        <li><a href="#">track order</a></li>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">support</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">contacts</a></li>
-                    </ul>                   
-                </div>
-            </div>
-            <div class="footer-line"></div>
-            <div class="footer-end">
-                <p>copyright <i class="fa-regular fa-copyright"></i> 2023 all rights are reserved | this template is made with
-                    <i class="fa-solid fa-heart heart"></i> by <a href="#">colorlib</a></p>
+            <div class="flex gap-4 text-white/60 text-sm">
+                <i class="fa-brands fa-facebook-f hover:text-white"></i>
+                <i class="fa-brands fa-twitter hover:text-white"></i>
+                <i class="fa-brands fa-linkedin-in hover:text-white"></i>
+                <i class="fa-brands fa-instagram hover:text-white"></i>
             </div>
         </div>
     </body>
