@@ -548,11 +548,12 @@ nav{
     .products-div {
         width: 100%;
         box-sizing: border-box;
+        margin-bottom: 20px;
     }
 
     .products-div img {
         width: 100%;
-        height: 250px;
+        height: auto;
         object-fit: cover;
     }
 
